@@ -9,22 +9,22 @@ import (
 	"github.com/mattermost/mattermost-server/v5/cmd/mattermost/commands"
 
 	// Plugins
-	_ "github.com/mattermost/mattermost-server/v5/model/gitlab"
+	"github.com/mattermost/mattermost-server/v5/model/gitlab"
 
 	// Enterprise Imports
-	_ "github.com/mattermost/mattermost-server/v5/imports"
+	"github.com/mattermost/mattermost-server/v5/imports"
 
 	// Enterprise Deps
-	_ "github.com/gorilla/handlers"
-	_ "github.com/hako/durafmt"
-	_ "github.com/hashicorp/memberlist"
-	_ "github.com/mattermost/gosaml2"
-	_ "github.com/mattermost/ldap"
-	_ "github.com/mattermost/rsc/qr"
-	_ "github.com/prometheus/client_golang/prometheus"
-	_ "github.com/prometheus/client_golang/prometheus/promhttp"
-	_ "github.com/tylerb/graceful"
-	_ "gopkg.in/olivere/elastic.v6"
+	"github.com/gorilla/handlers"
+	"github.com/hako/durafmt"
+	"github.com/hashicorp/memberlist"
+	"github.com/mattermost/gosaml2"
+	"github.com/mattermost/ldap"
+	"github.com/mattermost/rsc/qr"
+	"github.com/prometheus/client_golang/prometheus"
+	"github.com/prometheus/client_golang/prometheus/promhttp"
+	"github.com/tylerb/graceful"
+	"gopkg.in/olivere/elastic.v6"
 )
 
 func main() {
