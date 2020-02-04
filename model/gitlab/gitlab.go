@@ -17,7 +17,7 @@ type GitLabProvider struct {
 }
 
 type GitLabUser struct {
-	Id       int64  `json:"id"`
+	Id       string  `json:"id"`
 	Username string `json:"username"`
 	Login    string `json:"login"`
 	Email    string `json:"email"`
@@ -87,7 +87,8 @@ func (glu *GitLabUser) IsValid() bool {
 }
 
 func (glu *GitLabUser) getAuthData() string {
-	return strconv.FormatInt(glu.Id, 10)
+	//return strconv.FormatInt(glu.Id, 10)
+	return glu.Id
 }
 
 func (m *GitLabProvider) GetUserFromJson(data io.Reader) *model.User {
