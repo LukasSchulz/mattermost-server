@@ -30,12 +30,12 @@ ifneq ($(wildcard $(BUILD_ENTERPRISE_DIR)/.),)
 		BUILD_TYPE_NAME = enterprise
 		BUILD_HASH_ENTERPRISE = $(shell cd $(BUILD_ENTERPRISE_DIR) && git rev-parse HEAD)
 	else
-		BUILD_ENTERPRISE_READY = false
-		BUILD_TYPE_NAME = team
+		BUILD_ENTERPRISE_READY = true #false
+		BUILD_TYPE_NAME = enterprise #team
 	endif
 else
-	BUILD_ENTERPRISE_READY = false
-	BUILD_TYPE_NAME = team
+	BUILD_ENTERPRISE_READY = true #false
+	BUILD_TYPE_NAME = enterprise #team
 endif
 BUILD_WEBAPP_DIR ?= ../mattermost-webapp
 BUILD_CLIENT = false
