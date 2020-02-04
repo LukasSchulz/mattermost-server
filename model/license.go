@@ -103,15 +103,15 @@ func (f *Features) SetDefaults() {
 	}
 
 	if f.LDAP == nil {
-		f.LDAP = NewBool(*f.FutureFeatures)
+		f.LDAP = NewBool(true)
 	}
 
 	if f.LDAPGroups == nil {
-		f.LDAPGroups = NewBool(*f.FutureFeatures)
+		f.LDAPGroups = NewBool(true)
 	}
 
 	if f.MFA == nil {
-		f.MFA = NewBool(*f.FutureFeatures)
+		f.MFA = NewBool(true)
 	}
 
 	if f.GoogleOAuth == nil {
@@ -123,27 +123,27 @@ func (f *Features) SetDefaults() {
 	}
 
 	if f.Compliance == nil {
-		f.Compliance = NewBool(*f.FutureFeatures)
+		f.Compliance = NewBool(true)
 	}
 
 	if f.Cluster == nil {
-		f.Cluster = NewBool(*f.FutureFeatures)
+		f.Cluster = NewBool(true)
 	}
 
 	if f.Metrics == nil {
-		f.Metrics = NewBool(*f.FutureFeatures)
+		f.Metrics = NewBool(true)
 	}
 
 	if f.MHPNS == nil {
-		f.MHPNS = NewBool(*f.FutureFeatures)
+		f.MHPNS = NewBool(true)
 	}
 
 	if f.SAML == nil {
-		f.SAML = NewBool(*f.FutureFeatures)
+		f.SAML = NewBool(true)
 	}
 
 	if f.Elasticsearch == nil {
-		f.Elasticsearch = NewBool(*f.FutureFeatures)
+		f.Elasticsearch = NewBool(true)
 	}
 
 	if f.Announcement == nil {
@@ -155,39 +155,39 @@ func (f *Features) SetDefaults() {
 	}
 
 	if f.EmailNotificationContents == nil {
-		f.EmailNotificationContents = NewBool(*f.FutureFeatures)
+		f.EmailNotificationContents = NewBool(true)
 	}
 
 	if f.DataRetention == nil {
-		f.DataRetention = NewBool(*f.FutureFeatures)
+		f.DataRetention = NewBool(true)
 	}
 
 	if f.MessageExport == nil {
-		f.MessageExport = NewBool(*f.FutureFeatures)
+		f.MessageExport = NewBool(true)
 	}
 
 	if f.CustomPermissionsSchemes == nil {
-		f.CustomPermissionsSchemes = NewBool(*f.FutureFeatures)
+		f.CustomPermissionsSchemes = NewBool(true)
 	}
 
 	if f.GuestAccounts == nil {
-		f.GuestAccounts = NewBool(*f.FutureFeatures)
+		f.GuestAccounts = NewBool(true)
 	}
 
 	if f.GuestAccountsPermissions == nil {
-		f.GuestAccountsPermissions = NewBool(*f.FutureFeatures)
+		f.GuestAccountsPermissions = NewBool(true)
 	}
 
 	if f.CustomTermsOfService == nil {
-		f.CustomTermsOfService = NewBool(*f.FutureFeatures)
+		f.CustomTermsOfService = NewBool(true)
 	}
 
 	if f.IDLoadedPushNotifications == nil {
-		f.IDLoadedPushNotifications = NewBool(*f.FutureFeatures)
+		f.IDLoadedPushNotifications = NewBool(true)
 	}
 
 	if f.LockTeammateNameDisplay == nil {
-		f.LockTeammateNameDisplay = NewBool(*f.FutureFeatures)
+		f.LockTeammateNameDisplay = NewBool(true)
 	}
 }
 
